@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculadora">
+      <input type="text" class="output" id="resultado" disabled>
+      <div class="botones">
+          <button class="operador" value="+">+</button>
+          <button class="operador" value="-">-</button>
+          <button class="operador" value="*">&times;</button>
+          <button class="operador" value="/">/</button>
+          <button value="5">5</button>
+          <button value="6">6</button>
+          <button value="7">7</button>
+          <button value="8">8</button>
+          <button value="1">1</button>
+          <button value="2">2</button>
+          <button value="3">3</button>
+          <button value="4">4</button>
+          <button value="0">0</button>
+          <button value=".">.</button>
+          <button id="limpiar">C</button>
+          <button id="igual">=</button>
+      </div>
+      <button id="instruccion">RET</button>
+            <a id="miEnlace" href="../index.html" style="display: none;"></a>
+            <script>
+                const boton = document.getElementById('instruccion');
+                const enlace = document.getElementById('miEnlace');
+                boton.addEventListener('click', () => {
+                    enlace.style.display = 'block';
+                    location.href = enlace.href;
+                });
+            </script>
+    </div>
+    <script src="guion.js"></script>
+  </body>
+</html>
